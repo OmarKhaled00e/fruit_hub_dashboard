@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_hub_dashboard/core/helper_functions/on_generate_routes.dart';
+import 'package:fruit_hub_dashboard/core/services/get_it_services.dart';
+import 'package:fruit_hub_dashboard/core/services/supabase_srorage.dart';
 import 'package:fruit_hub_dashboard/features/dashboard/presentation/views/dashboard_view.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Supabase.initialize(
-    url: 'https://wibtaguysgrpvymnylwg.supabase.co',
-    anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpYnRhZ3V5c2dycHZ5bW55bHdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAyNjE0OTYsImV4cCI6MjA2NTgzNzQ5Nn0.pluJI1saB7VMVKQWD-vEQWR0kPU9JvV2kEx1vWEIUXM',
-  );
+  SupabaseStorageService.initSupabase();
+  setupGetit();
   runApp(const MainDash());
 }
 

@@ -1,0 +1,2 @@
+const  kUrlSupabase ='https://wibtaguysgrpvymnylwg.supabase.co';
+const  kNONKeySupabase ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpYnRhZ3V5c2dycHZ5bW55bHdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAyNjE0OTYsImV4cCI6MjA2NTgzNzQ5Nn0.pluJI1saB7VMVKQWD-vEQWR0kPU9JvV2kEx1vWEIUXM';
