@@ -41,10 +41,10 @@ class AddProduct {
       isOrganic: addProductInputEntity.isOrganic,
       description: addProductInputEntity.description,
       price: addProductInputEntity.price,
-      image: addProductInputEntity.image,
+      image: File(addProductInputEntity.image),
       isFeatured: addProductInputEntity.isFeatured,
       expirationMonths: addProductInputEntity.expirationMonths,
-      numberOfColories: addProductInputEntity.numberOfColories,
+      numberOfColories: addProductInputEntity.numberOfCalories,
       unitAmount: addProductInputEntity.unitAmount,
     );
   }

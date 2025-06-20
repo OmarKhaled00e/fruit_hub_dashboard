@@ -7,10 +7,10 @@ import 'package:get_it/get_it.dart';
 
 final getIt = GetIt.instance;
 
-void setupGetit() {
-  getIt.registerSingleton<StorageService>(SupabaseStorageService());
-  getIt.registerSingleton<StorageService>(SupabaseStorageService());
+void setupGetit(StorageService storageService) {
+  getIt.registerSingleton<StorageService>(storageService);
 
-  getIt.registerSingleton<ImagesRepo>(ImagesRepoImpl(getIt.get<StorageService>()));
-  // getIt.registerSingleton<ProductsRepo>(ProductsRepoImpl());
+  getIt.registerSingleton<ImagesRepo>(
+    ImagesRepoImpl(getIt.get<StorageService>()),
+  );
 }
